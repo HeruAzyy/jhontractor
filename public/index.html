@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,31 +22,31 @@
 				</div>
 
 				<div class="hidden lg:block">
-					<ul class="flex gap-5">
+					<ul class="flex gap-7">
 						<li>
 							<a
-								href="#"
+								href="#home"
 								class="line hover:text-orange transition duration-300">
 								Home
 							</a>
 						</li>
 						<li>
 							<a
-								href="#"
+								href="#about"
 								class="line hover:text-orange transition duration-300">
 								About
 							</a>
 						</li>
 						<li>
 							<a
-								href="#"
+								href="#service"
 								class="line hover:text-orange transition duration-300">
 								Service
 							</a>
 						</li>
 						<li>
 							<a
-								href="#"
+								href="#project"
 								class="line hover:text-orange transition duration-300">
 								Project
 							</a>
@@ -78,16 +78,16 @@
 					class="w-full bg-dark text-center scale-y-0 origin-top pt-5 absolute top-20 left-0 transition-all duration-100 shadow-md">
 					<ul>
 						<li class="pb-5">
-							<a href="" class="hover:text-orange">Home</a>
+							<a href="#home" class="hover:text-orange">Home</a>
 						</li>
 						<li class="pb-5">
-							<a href="" class="hover:text-orange">About</a>
+							<a href="#about" class="hover:text-orange">About</a>
 						</li>
 						<li class="pb-5">
-							<a href="" class="hover:text-orange">Service</a>
+							<a href="#service" class="hover:text-orange">Service</a>
 						</li>
 						<li class="pb-5">
-							<a href="" class="hover:text-orange">Project</a>
+							<a href="#project" class="hover:text-orange">Project</a>
 						</li>
 					</ul>
 				</div>
@@ -96,7 +96,8 @@
 
 		<!-- HERO SECTION -->
 		<section
-			class="bg-cover bg-bottom bg-fixed relative flex justify-center"
+			id="home"
+			class="bg-cover bg-bottom bg-fixed"
 			style="background-image: url(../assets/img/hero.png)">
 			<div class="flex items-center h-screen">
 				<div
@@ -126,22 +127,76 @@
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<div
-				class="absolute bg-orange p-5 -bottom-11 rounded-lg shadow-md border-t text-white">
-				<ul>
-					<li class="text-sm">
-						- Quality Control System, 100% Satisfaction Guarantee
-					</li>
+		<!-- ABOUT SECTION -->
+		<section id="about" class="bg-dark pt-5 px-10 lg:px-20">
+			<div class="container">
+				<div
+					class="py-5 flex justify-between md:justify-center items-center gap-5 md:gap-10">
+					<div class="text-white md:flex gap-3 items-center">
+						<p class="text-orange text-2xl md:text-4xl font-bold">25+</p>
+						<p class="text-xs md:text-sm">
+							Years of
+							<br />
+							Experience
+						</p>
+					</div>
 
-					<li class="text-sm">
-						- Highly Proffesional Staff, Accurate Testing Processes
-					</li>
+					<div class="text-white md:flex gap-3 items-center">
+						<p class="text-orange text-2xl md:text-4xl font-bold">378+</p>
+						<p class="text-xs md:text-sm">
+							Project
+							<br />
+							Complete
+						</p>
+					</div>
 
-					<li class="text-sm">
-						- Unrivalled Workmanship, Proffesional and Qualified
-					</li>
-				</ul>
+					<div class="text-white md:flex gap-3 items-center">
+						<p class="text-orange text-2xl md:text-4xl font-bold">7+</p>
+						<p class="text-xs md:text-sm">
+							Winning
+							<br />
+							Global Award
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="flex flex-wrap justify-between pt-10 lg:flex-nowrap lg:pt-0 lg:items-center">
+					<div class="lg:w-3/5">
+						<h3 class="text-white text-3xl font-semibold">
+							<span class="text-orange">25 Years</span>
+							<br />
+							of experience!
+						</h3>
+
+						<p class="text-gray-300 text-sm pt-5">
+							We have a team of experienced professionals who have been
+							in the industry for over 25 years. Our contractors have a
+							wealth of knowledge and skills that they have acquired over
+							the years, making them experts in their field.
+							<br />
+							<br />
+							With 25 years of experience, our contractors have a deep
+							understanding of industry standards and regulations. We
+							ensure that all our projects comply with the latest safety
+							and building codes, and that the final product meets or
+							exceeds our client's expectations.
+						</p>
+
+						<p class="text-white/50 font-brush text-4xl pt-10 ml-2">
+							jhon lbf
+						</p>
+						<p class="text-sm text-gray-300 pt-2">
+							Henry Kurnia - Founder
+						</p>
+					</div>
+
+					<div class="lg:w-96">
+						<img src="../assets/img/about.png" alt="About us" />
+					</div>
+				</div>
 			</div>
 		</section>
 
