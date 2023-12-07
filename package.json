@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "",
 	"scripts": {
-		"dev": "npx tailwindcss -i ./public/input.css -o ./css/output.css --watch",
+		"dev": "npx tailwindcss -i ./assets/input.css -o ./css/output.css --watch",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Heru Azy",
