@@ -15,3 +15,32 @@
 .line {
 	@apply after:content-[''] after:block after:w-0 after:h-0.5 after:bg-orange hover:after:w-full after:transition-all after:duration-300;
 }
+
+*::-webkit-scrollbar {
+	@apply w-0;
+}
+
+*::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	@apply bg-transparent border-none;
+}
+
+#slider {
+	--sb-track-color: #232e33;
+	--sb-thumb-color: #ff7420;
+	scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+#slider::-webkit-scrollbar-track {
+	background: var(--sb-track-color);
+	border-radius: 10px;
+}
+
+#slider::-webkit-scrollbar-thumb {
+	background: var(--sb-thumb-color);
+	border-radius: 10px;
+	border: 3px solid #232e33;
+}
