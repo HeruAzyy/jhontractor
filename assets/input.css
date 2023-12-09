@@ -16,6 +16,7 @@
 	@apply after:content-[''] after:block after:w-0 after:h-0.5 after:bg-orange hover:after:w-full after:transition-all after:duration-300;
 }
 
+/* SCROLLBAR CUSTOM */
 *::-webkit-scrollbar {
 	@apply w-0;
 }

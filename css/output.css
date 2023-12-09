@@ -745,10 +745,6 @@ body {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -756,12 +752,6 @@ body {
 .from-dark {
   --tw-gradient-from: #191A19 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(25 26 25 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-black {
-  --tw-gradient-from: #000 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -819,6 +809,11 @@ body {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-3 {
@@ -923,6 +918,11 @@ body {
   color: rgb(255 255 255 / 0.5);
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -988,6 +988,8 @@ body {
   content: var(--tw-content);
   width: 100%;
 }
+
+/* SCROLLBAR CUSTOM */
 
 *::-webkit-scrollbar {
   width: 0px;
@@ -1076,6 +1078,22 @@ body {
     width: 75%;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-0 {
+    width: 0px;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -1086,6 +1104,10 @@ body {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-10 {
@@ -1164,22 +1186,20 @@ body {
     align-items: center;
   }
 
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .lg\:gap-10 {
     gap: 2.5rem;
   }
 
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:bg-gradient-to-r {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  }
-
-  .lg\:from-black {
-    --tw-gradient-from: #000 var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   }
 
   .lg\:px-20 {
